@@ -17,21 +17,25 @@ ul {
     font-size: 18px;
     font-weight: 400;
     height: 60px;
+
     justify-content: center;
     letter-spacing: normal;
     line-height: 1.2;
+    padding-top: 20px;
 }
 
 .right {
     display: flex;
     gap: 40px;
-    margin: 0 0 0 1100px;
+    margin: 0 0 0 300px;
 }
 
-
+.center {
+    margin: 0 0 0 150px;
+}
 
 .inner {
-
+    max-width: 1200px;
     margin: 0 0 0 100px;
     padding: 0 15px;
 }
@@ -74,34 +78,50 @@ body {
 
 .main_visual .main_slide figure {
     position: relative;
-    height: 600px;
+    height: 800px;
+
 }
 
 .main_visual .main_slide .itm01 {
 
-    background: url(../images/kv_ev9_gt_line_230329_1920x1080_pc-3.jpg) no-repeat center center/cover;
+    background: url(../images/kv_ev9_contract_230503_pc.jpg) no-repeat center center/cover;
 }
 
 .main_visual .main_slide .itm02 {
 
-    background: url(../images/ev6gt_feature_bg_main_pc.jpg) no-repeat center center/cover;
+    background: url(../images/niroplus_feature_bg_pc-2.jpg) no-repeat center center/cover;
 }
 
 .main_visual .main_slide .itm03 {
 
-    background: url(../images/kv_ev9_contract_230503_pc.jpg) no-repeat center center/cover;
+    background: url(../images/kv_ev9_gt_line_230329_1920x1080_pc-3.jpg) no-repeat center center/cover;
 }
 
 .main_visual .main_slide .slogan {
 
 
     position: absolute;
-    top: 25%;
-    left: 47%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, 50%);
     width: 1200px;
-    padding: 0 15px;
+
+    transition: 0.5s;
+
+
+
 }
+
+.main_visual .main_slide:hover .slogan {
+
+
+    display: none;
+    transition: 0.5s;
+
+
+
+}
+
 
 
 .main_visual .main_slide .slogan strong {
@@ -109,9 +129,13 @@ body {
     margin: 0 0 10px 0;
     font-size: 50px;
 
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
     text-shadow: 0 0 3px rgba(0, 0. 0, 0.3);
+    animation-duration: 3s;
+    animation-name: slidein;
+
+
 }
 
 .main_visual .main_slide .slogan p {
@@ -121,13 +145,17 @@ body {
     font-weight: 300;
     color: #fff;
     text-shadow: 0 0 3px rgba(0, 0. 0, 0.3);
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 .main_visual .main_slide .slogan a {
     display: inline-block;
-    color: #fff;
-    background: #333;
-    padding: 3px 12px 5px 12px;
+    color: black;
+    align-items: center;
+    background: #fff;
+    margin-top: 20px;
+    padding: 15px 15px 15px 12px;
 
 }
 
@@ -135,16 +163,52 @@ body {
 .main_visual .main_slide .itm02 .slogan strong {
 
 
-    color: #444;
+    color: #fff;
     text-shadow: 0 0 3px rgba(255, 255. 255, 0.3);
+
 }
 
 .main_visual .main_slide .itm02 .slogan p {
 
 
-    color: #444;
+    color: #fff;
     text-shadow: 0 0 3px rgba(255, 255. 255, 0.3);
 }
+
+
+.slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    background: black;
+    color: black;
+
+    border-radius: 50%;
+    padding: 5px;
+    gap: 0px;
+    font-size: 0px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #Ddd;
+    outline: 1px solid #Ddd;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background: #f9f9f9;
+}
+
+
+
 
 
 

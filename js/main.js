@@ -1,15 +1,20 @@
 $(function () {
     $('.main_slide').slick({
-        //dots: true,
-        infinite: true,
-        autoplay: true,      //자동시작 (boolean) -default:false
+
+        dots: true,
+        arrows: false,
+        autoplay: true,
         autoplaySpeed: 3000,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        prevArrow: $('#prevArrow'),
-        nextArrow: $('#nextArrow'),
+        pauseOnHover: true,
+
 
     });
+
+
+})
+
+$(function () {
+    $('.to_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+    })
 })
