@@ -1,0 +1,176 @@
+.slick-track,
+.slick-list {
+    transition-delay: 30ms;
+}
+
+#header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+ul {
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 400;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+.right {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 0 1100px;
+}
+
+
+
+.inner {
+
+    margin: 0 0 0 100px;
+    padding: 0 15px;
+}
+
+
+
+.sec .tit p {
+    font-size: 15px;
+    word-break: keep-all;
+    line-height: 19px;
+}
+
+body {
+    min-height: 150vh;
+}
+
+
+
+/* #header {
+    border-bottom: 1px solid #ddd;
+} */
+
+#header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#header .gnb {}
+
+#header .gnb>ul {
+    display: flex;
+
+    gap: 40px;
+}
+
+#header .service {
+    margin: 0 0 0 50px;
+}
+
+.main_visual .main_slide figure {
+    position: relative;
+    height: 600px;
+}
+
+.main_visual .main_slide .itm01 {
+
+    background: url(../images/kv_ev9_gt_line_230329_1920x1080_pc-3.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm02 {
+
+    background: url(../images/ev6gt_feature_bg_main_pc.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm03 {
+
+    background: url(../images/kv_ev9_contract_230503_pc.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .slogan {
+
+
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    transform: translate(-50%, 50%);
+    width: 1200px;
+    padding: 0 15px;
+}
+
+
+.main_visual .main_slide .slogan strong {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 50px;
+
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0. 0, 0.3);
+}
+
+.main_visual .main_slide .slogan p {
+
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0. 0, 0.3);
+}
+
+.main_visual .main_slide .slogan a {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 3px 12px 5px 12px;
+
+}
+
+
+.main_visual .main_slide .itm02 .slogan strong {
+
+
+    color: #444;
+    text-shadow: 0 0 3px rgba(255, 255. 255, 0.3);
+}
+
+.main_visual .main_slide .itm02 .slogan p {
+
+
+    color: #444;
+    text-shadow: 0 0 3px rgba(255, 255. 255, 0.3);
+}
+
+
+
+#footer {
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.to_top {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.to_top i {
+    background: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
